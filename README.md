@@ -30,5 +30,7 @@ El procedimiento para utilizar la funcion CalibrarSticks(señal) sería, una vez
 Otras funciones
 
 Inicializar() Reinicia las lecturas a 0 y empieza a muestrear nuevamente.
-Min() Devuelve el valor mínimo que puede devolver el filtrado
+
+Min() Devuelve el valor mínimo que puede devolver el filtrado.
+
 Max() Devuelve el valor máximo que puede devolver el filtrado.
