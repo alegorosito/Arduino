@@ -45,7 +45,8 @@ int RX::Procesar() {
 
 void RX::CalibrarSticks(int entrada) {
 	// Comprueba los valores minimos y maximos del canal.
-	// Durante el proceso de calibracion los controles deben moverse en todas las direcciones simultaneamente
+	// Durante el proceso de calibracion el control debe moverse 
+	// para generar el rango maximo de valores 
 	if (entrada < _minCh) _minCh = entrada;
 	if (entrada > _maxCh) _maxCh = entrada;
 }
