@@ -34,12 +34,13 @@ int pinC2 = 4;
 void setup() {
   
   Serial.begin(115200);
+  // Asigna los pines a los canales mediante la funcion DefPin()
   c1.DefPin(pinC1);
   c2.DefPin(pinC2);
 }
 
 void loop() {
-  
+  // Mediante la funcion procesar obtenemos la señal filtrada de los canales 1 y 2
   int canal1 = c1.Procesar();
   int canal2 = c2.Procesar();
   
