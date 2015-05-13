@@ -29,14 +29,11 @@
 
 class RX
 {
-/** Constructor RX ***************************************************  
-   Se setean las variables por defecto, establecidas por el usuario.
-*******************************************************************/
+
 public:
 
-	/******************************************************
-		Funciones de la clase RX
-	*******************************************************/
+	// Funciones
+
 	int Procesar();
 	void CalibrarSticks(int entrada);
 	void DefPin(int pin);
@@ -47,11 +44,12 @@ public:
 	int Max();
 
 private:
-	// Canal de RX
+	// Variables para filtrado del Canal de RX
+
 	float _ch, _chAnt = 0;
 	int _cantLecturas = 10, _pos = 0, _pin;
-	// Variables para promediado de las entradas RX
 	int _lectCh[10], _totalCh = 0, _salida = 0;
+	
 	// Limites de rangos de entradas de RX
 	int _minCh = 1278, _maxCh = 2608;
 
